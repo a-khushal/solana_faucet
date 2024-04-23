@@ -5,7 +5,9 @@
   },
   "dependencies": {
     "@solana/web3.js": "^1.91.7",
-    "hono": "^4.2.6"
+    "@types/ws": "^8.5.10",
+    "hono": "^4.2.6",
+    "ws": "^8.16.0"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20240403.0",

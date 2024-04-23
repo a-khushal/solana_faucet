@@ -5,7 +5,20 @@ const app = new Hono()
 
 app.get("/", (c)=>{
   return c.json({
-    message: "server running"
+    message: "server running",
+  })
+});
+
+app.get("/something", (c) => {
+  return c.json({
+    message: "something route"
+  })
+})
+
+app.post("/something", async (c) => {
+  const { toPublicKey } = await c.req.json();
+  return c.json({
+    public_key: toPublicKey
   })
 })
 
