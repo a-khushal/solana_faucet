@@ -11,6 +11,8 @@ export const RequestAirdrop = () => {
     function requestAirdrop() {
         const publicKey = wallet.publicKey;
         connection.requestAirdrop(publicKey, parseInt(amout) * LAMPORTS_PER_SOL)
+        alert(`Airdroped ${amout} SOL`)
+        window.location.reload()
     }
 
     useEffect(() => {
