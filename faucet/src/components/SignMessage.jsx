@@ -15,7 +15,8 @@ export function SignMessage() {
         const signature = await signMessage(encodedMessage)
 
         if (!ed25519.verify(signature, encodedMessage, publicKey.toBytes())) throw new Error('Message signature invalid!');
-        alert("success", `Message signature: ${bs58.encode(signature)}`)
+        alert("success")
+        console.log(`Message signature: ${bs58.encode(signature)}`)
     }
 
     return (
