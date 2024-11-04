@@ -4,6 +4,7 @@ import { RequestAirdrop } from './components/RequestAirdrop';
 
 import '@solana/wallet-adapter-react-ui/styles.css';
 import './App.css'
+import { SendTokens } from './components/SendTokens';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <WalletModalProvider>
           <WalletMultiButton />
           <RequestAirdrop />
+          <SendTokens/>
         </WalletModalProvider>
       </WalletProvider>
     </ConnectionProvider>

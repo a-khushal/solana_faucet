@@ -23,7 +23,7 @@ export const RequestAirdrop = () => {
         }
         
         getBalance()
-    })
+    }, [wallet, connection])
 
     return (
         <div style={ {marginTop: "25px"} }>
